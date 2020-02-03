@@ -12,12 +12,12 @@ import net.minecraft.util.registry.Registry;
 public class Main implements ModInitializer
 {
 
-    public static final Item ItemThickSteak = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(12).saturationModifier(16).meat().statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,200), 0.5F).build()));
+    public static final Item item_thicksteak = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(12).saturationModifier(16).meat().statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,200), 0.5F).build()));
 
 
     @Override
     public void onInitialize() {
-        Registry.register(Registry.ITEM, new Identifier("morefood", "ItemThickSteak"), ItemThickSteak);
+        Registry.register(Registry.ITEM, new Identifier("morefood", "item_thicksteak"), item_thicksteak);
     }
 }
 
